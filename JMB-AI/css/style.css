@@ -114,13 +114,19 @@ button:hover{
 
 .navbar{
 
+    width:100%;
+
     display:flex;
 
-    justify-content:space-between;
+    flex-direction:column;
+
+    justify-content:center;
 
     align-items:center;
 
-    padding:20px 8%;
+    gap:20px;
+
+    padding:20px;
 
 }
 
