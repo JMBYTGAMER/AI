@@ -142,11 +142,13 @@ button:hover{
 
 }
 
-/* Hero */
+/* Hero Section */
 
 .hero{
 
-    min-height:80vh;
+    width:100%;
+
+    min-height:calc(100vh - 80px);
 
     display:flex;
 
@@ -157,6 +159,8 @@ button:hover{
     align-items:center;
 
     text-align:center;
+
+    padding:20px;
 
 }
 
