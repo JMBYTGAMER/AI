@@ -175,3 +175,21 @@ button:hover{
     flex-wrap:wrap;
 
 }
+
+
+.hero h1{
+
+    font-size:clamp(45px,10vw,80px);
+
+    color:#38bdf8;
+
+    margin-bottom:20px;
+
+    line-height:1.1;
+
+    animation:
+        fadeIn 1s,
+        floating 5s infinite,
+        glow 2s infinite;
+
+}
