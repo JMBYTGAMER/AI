@@ -49,15 +49,21 @@ body{
 
 }
 
-/* Main Title */
-
 h1{
 
-    font-size:55px;
+    font-size:60px;
+
+    color:#38bdf8;
 
     margin-bottom:15px;
 
-    color:#38bdf8;
+    animation:
+
+        fadeIn 1s,
+
+        floating 5s infinite,
+
+        glow 2s infinite;
 
 }
 
