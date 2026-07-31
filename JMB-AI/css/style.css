@@ -1,0 +1,104 @@
+/* ==========================================
+   JMB AI - Main Style
+   Version : 1.0
+   ========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    background:#0f172a;
+
+    color:white;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+/* Main Container */
+
+#app{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+/* Main Title */
+
+h1{
+
+    font-size:55px;
+
+    margin-bottom:15px;
+
+    color:#38bdf8;
+
+}
+
+/* Subtitle */
+
+p{
+
+    font-size:20px;
+
+    opacity:.8;
+
+    margin-bottom:40px;
+
+}
+
+/* Button */
+
+button{
+
+    border:none;
+
+    padding:16px 35px;
+
+    border-radius:15px;
+
+    background:#0ea5e9;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#0284c7;
+
+    transform:scale(1.05);
+
+}
