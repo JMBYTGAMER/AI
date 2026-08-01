@@ -2,6 +2,8 @@ const sendButton = document.getElementById("sendButton");
 const messageInput = document.getElementById("message");
 const chatMessages = document.getElementById("chatMessages");
 
+let chats = JSON.parse(localStorage.getItem("jmb_chats")) || [];
+
 sendButton.onclick = () => {
 
     const text = messageInput.value.trim();
