@@ -71,3 +71,31 @@
     }
 
 }
+
+@keyframes floatDots{
+
+    0%{
+
+        transform:translateY(0);
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        transform:translateY(-25px);
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+        opacity:.2;
+
+    }
+
+}
