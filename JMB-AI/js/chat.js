@@ -9,10 +9,12 @@ sendButton.onclick = () => {
     if(text==="") return;
 
     chatMessages.innerHTML += `
-        <div class="user-message">
-            ${text}
-        </div>
-    `;
+<div class="user-message">
+${text}
+</div>
+`;
+
+chatMessages.scrollTop = chatMessages.scrollHeight;
 
     messageInput.value = "";
 
