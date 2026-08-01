@@ -6,9 +6,17 @@ let chats = JSON.parse(localStorage.getItem("jmb_chats")) || [];
 
 sendButton.onclick = () => {
 
-    const text = messageInput.value.trim();
+    chats.push({
 
-    if(text==="") return;
+    sender:"user",
+
+    message:text,
+
+    time:new Date().toLocaleTimeString()
+
+});
+
+saveChats();
 
     chatMessages.innerHTML += `
 <div class="user-message">
@@ -43,3 +51,12 @@ typing.innerHTML = "🤖 JMB AI is typing...";
 chatMessages.appendChild(typing);
 
 chatMessages.scrollTop = chatMessages.scrollHeight;
+
+function saveChats(){
+
+    localStorage.setItem(
+        "jmb_chats",
+        JSON.stringify(chats)
+    );
+
+}
