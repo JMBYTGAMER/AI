@@ -544,3 +544,25 @@ body{
     font-weight:bold;
 
 }
+
+.chat-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+#newChat{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    font-size:26px;
+
+}
