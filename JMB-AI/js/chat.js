@@ -60,3 +60,41 @@ function saveChats(){
     );
 
 }
+
+function loadChats(){
+
+    chats.forEach(chat=>{
+
+        chatMessages.innerHTML += `
+
+        <div class="${
+            chat.sender==="user"
+            ?
+            "user-message"
+            :
+            "ai-message"
+        }">
+
+        ${chat.message}
+
+        </div>
+
+        `;
+
+    });
+
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+}
+
+loadChats();
+
+document
+.getElementById("newChat")
+.onclick=()=>{
+
+    localStorage.removeItem("jmb_chats");
+
+    location.reload();
+
+};
