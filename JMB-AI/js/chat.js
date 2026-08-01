@@ -29,3 +29,15 @@ messageInput.addEventListener("keypress",(event)=>{
     }
 
 });
+
+const typing = document.createElement("div");
+
+typing.className = "ai-message";
+
+typing.id = "typing";
+
+typing.innerHTML = "🤖 JMB AI is typing...";
+
+chatMessages.appendChild(typing);
+
+chatMessages.scrollTop = chatMessages.scrollHeight;
