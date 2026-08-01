@@ -529,3 +529,18 @@ body{
     animation:fadeIn .3s;
 
 }
+
+
+.chat-input button{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
