@@ -387,23 +387,33 @@ button:hover{
 }
 
 
-/* ==========================
-   Chat Page
-========================== */
+/* ===========================
+   Chat Layout
+=========================== */
+
+body{
+
+    margin:0;
+
+    background:#0f172a;
+
+    color:white;
+
+    font-family:Arial,sans-serif;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
 
 .chat-container{
-
-    width:100%;
-
-    max-width:900px;
-
-    margin:auto;
-
-    min-height:100vh;
 
     display:flex;
 
     flex-direction:column;
+
+    height:100vh;
 
 }
 
@@ -413,11 +423,13 @@ button:hover{
 
     text-align:center;
 
-    font-size:28px;
+    font-size:30px;
 
     font-weight:bold;
 
     color:#38bdf8;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
 
 }
 
@@ -425,21 +437,9 @@ button:hover{
 
     flex:1;
 
-    padding:20px;
-
     overflow-y:auto;
 
-}
-
-.ai-message{
-
-    background:#1e293b;
-
-    padding:18px;
-
-    border-radius:15px;
-
-    margin-bottom:15px;
+    padding:20px;
 
 }
 
@@ -449,7 +449,11 @@ button:hover{
 
     gap:10px;
 
-    padding:20px;
+    padding:15px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    background:#111827;
 
 }
 
@@ -457,16 +461,22 @@ button:hover{
 
     flex:1;
 
-    padding:16px;
+    padding:15px;
 
     border:none;
 
     border-radius:15px;
 
-    background:#111827;
+    background:#1e293b;
 
     color:white;
 
     font-size:18px;
+
+}
+
+.chat-input button{
+
+    width:110px;
 
 }
