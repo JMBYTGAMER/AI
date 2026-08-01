@@ -246,11 +246,17 @@ button:hover{
 
 .logo{
 
-    font-size:32px;
+    font-size:30px;
 
-    font-weight:bold;
+    font-weight:700;
 
     color:#38bdf8;
+
+    text-shadow:
+
+        0 0 15px #38bdf8;
+
+}
 
 }
 
@@ -258,31 +264,38 @@ button:hover{
 
     display:flex;
 
-    gap:15px;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
+    gap:12px;
 
 }
+
+.nav-buttons button{
+
+    width:140px;
+
+    height:50px;
+
+    font-size:18px;
+
+}
+
 
 .hero{
 
     width:100%;
 
-    min-height:70vh;
+    min-height:100vh;
 
     display:flex;
-
-    flex-direction:column;
 
     justify-content:center;
 
     align-items:center;
 
+    flex-direction:column;
+
     text-align:center;
 
-    padding:20px;
+    padding-top:120px;
 
 }
 
@@ -317,5 +330,36 @@ button:hover{
         fadeIn 1s,
         floating 5s infinite,
         glow 2s infinite;
+
+}
+
+
+@media(max-width:768px){
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    padding:18px;
+
+}
+
+.nav-buttons{
+
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+}
 
 }
