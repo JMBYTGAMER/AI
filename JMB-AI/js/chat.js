@@ -19,3 +19,13 @@ chatMessages.scrollTop = chatMessages.scrollHeight;
     messageInput.value = "";
 
 };
+
+messageInput.addEventListener("keypress",(event)=>{
+
+    if(event.key==="Enter"){
+
+        sendButton.click();
+
+    }
+
+});
